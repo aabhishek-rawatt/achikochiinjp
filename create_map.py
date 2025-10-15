@@ -19,7 +19,7 @@ m = folium.Map(
 hikes = [
     {"name": "Mount Rokko", "coords": [34.77778, 135.26389], "images": []},
     {"name": "Uma Nose", "coords": [34.97250, 135.41417], "images": []},
-    {"name": "Fukuchiyama", "coords": [35.300, 135.133], "images": []},
+    {"name": "Fukuchiyama", "coords": [34.855269, 135.305932], "images": []},
     {"name": "Mount Kongou", "coords": [34.41944, 135.67306], "images": []},
     {"name": "Takatori", "coords": [34.44944, 135.79333], "images": []},
     {"name": "Katano-Kumini", "coords": [34.78794, 135.67995], "images": []},
