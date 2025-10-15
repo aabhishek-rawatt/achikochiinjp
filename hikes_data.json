@@ -1,0 +1,138 @@
+[
+    {
+        "name": "Mount Rokko",
+        "coords": [
+            34.77778,
+            135.26389
+        ],
+        "images": []
+    },
+    {
+        "name": "Uma Nose",
+        "coords": [
+            34.9725,
+            135.41417
+        ],
+        "images": []
+    },
+    {
+        "name": "Fukuchiyama",
+        "coords": [
+            35.3,
+            135.133
+        ],
+        "images": []
+    },
+    {
+        "name": "Mount Kongou",
+        "coords": [
+            34.41944,
+            135.67306
+        ],
+        "images": []
+    },
+    {
+        "name": "Takatori",
+        "coords": [
+            34.44944,
+            135.79333
+        ],
+        "images": []
+    },
+    {
+        "name": "Katano-Kumini",
+        "coords": [
+            34.78794,
+            135.67995
+        ],
+        "images": []
+    },
+    {
+        "name": "Mount Maya",
+        "coords": [
+            34.73292,
+            135.20444
+        ],
+        "images": []
+    },
+    {
+        "name": "Mount Iwawaki",
+        "coords": [
+            34.37387,
+            135.5511
+        ],
+        "images": []
+    },
+    {
+        "name": "Mount Hiei",
+        "coords": [
+            35.03139,
+            135.86139
+        ],
+        "images": []
+    },
+    {
+        "name": "Nakayama dera (Hyogo)",
+        "coords": [
+            34.78583,
+            135.29222
+        ],
+        "images": []
+    },
+    {
+        "name": "Suma Rikyu Park",
+        "coords": [
+            34.65222,
+            135.21139
+        ],
+        "images": []
+    },
+    {
+        "name": "Awaji Island",
+        "coords": [
+            34.38333,
+            134.88333
+        ],
+        "images": []
+    },
+    {
+        "name": "Mount Shigi",
+        "coords": [
+            34.61667,
+            135.75
+        ],
+        "images": []
+    },
+    {
+        "name": "Himeji - Acko",
+        "coords": [
+            34.81667,
+            134.68333
+        ],
+        "images": []
+    },
+    {
+        "name": "Nunobiki Falls",
+        "coords": [
+            34.72222,
+            135.19583
+        ],
+        "images": []
+    },
+    {
+        "name": "Yoshinoyama Nara",
+        "coords": [
+            34.36667,
+            135.76722
+        ],
+        "images": []
+    },
+    {
+        "name": "test_hike",
+        "coords": [
+            34.0,
+            135.0
+        ],
+        "images": []
+    }
+]
