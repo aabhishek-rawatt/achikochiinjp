@@ -4,16 +4,18 @@ import json
 from pathlib import Path
 
 # -----------------------------
-# 1. Base map (reliable terrain)
+# 1. Base map (Carto Voyager - terrain + English labels)
 # -----------------------------
 map_center = [36.2048, 138.2529]  # center of Japan
+m = folium.Map(location=map_center, zoom_start=6, tiles=None)
 
-m = folium.Map(
-    location=map_center,
-    zoom_start=6,
-    tiles='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    attr='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-)
+# Add Carto Voyager tiles
+folium.TileLayer(
+    tiles='https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+    attr='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
+    name='Carto Voyager',
+    control=True
+).add_to(m)
 
 # -----------------------------
 # 2. Paths
@@ -46,7 +48,7 @@ for hike in hikes:
         print(f"📂 Created folder: {folder_path}")
 
     # Find images in folder
-    images = list(Path(folder_path).glob("*.*"))  # all files
+    images = list(Path(folder_path).glob("*.*"))
     image_html = ""
     for img in images:
         rel_path = os.path.join(folder_path, img.name).replace("\\", "/")
