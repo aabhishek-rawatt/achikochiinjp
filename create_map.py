@@ -4,14 +4,15 @@ import json
 from pathlib import Path
 
 # -----------------------------
-# 1. Base map
+# 1. Base map (reliable terrain)
 # -----------------------------
-map_center = [36.2048, 138.2529]  # Center of Japan
+map_center = [36.2048, 138.2529]  # center of Japan
+
 m = folium.Map(
     location=map_center,
     zoom_start=6,
-    tiles='Stamen Terrain',
-    attr='Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
+    tiles='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    attr='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 )
 
 # -----------------------------
