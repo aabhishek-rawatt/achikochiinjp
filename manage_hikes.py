@@ -99,6 +99,7 @@ def delete_hike():
     if os.path.exists(folder_path):
         print(f"Note: Folder '{folder_path}' still exists. You can delete it manually if you want.")
 
+
 # -----------------------------
 # Main menu
 # -----------------------------

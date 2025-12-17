@@ -126,5 +126,69 @@
             135.76722
         ],
         "images": []
+    },
+    {
+        "name": "Katarai",
+        "coords": [
+            34.465488,
+            135.861846
+        ],
+        "images": []
+    },
+    {
+        "name": "\u83ca\u6c34\u5c71\u30fcKikusuiyama",
+        "coords": [
+            34.708654,
+            135.15294
+        ],
+        "images": []
+    },
+    {
+        "name": "\u934b\u84cb\u5c71\u30fcNabebutayama",
+        "coords": [
+            34.7157,
+            135.166696
+        ],
+        "images": []
+    },
+    {
+        "name": "\u518d\u3073\u5c71\u30fcFutatabi",
+        "coords": [
+            34.718383,
+            135.177735
+        ],
+        "images": []
+    },
+    {
+        "name": "\u30dd\u30f3\u30dd\u30f3\u30fcPonpon",
+        "coords": [
+            34.935151,
+            135.623831
+        ],
+        "images": []
+    },
+    {
+        "name": "\u98ef\u76db\u5c71\u30fcIimori",
+        "coords": [
+            34.726455,
+            135.653526
+        ],
+        "images": []
+    },
+    {
+        "name": "\u5927\u962a\u57ce\u30fc\u5915\u65b9\u6563\u6b69(Osaka Castle Evening Walk)",
+        "coords": [
+            34.687159,
+            135.526106
+        ],
+        "images": []
+    },
+    {
+        "name": "\u3084\u3051\u304a\u3084\u307e\u30fc(\u96ea\u4e0a\u30cf\u30a4\u30ad\u30f3\u30b0)-Yakeoyama (Snow Hike)",
+        "coords": [
+            35.260368,
+            135.937386
+        ],
+        "images": []
     }
 ]
