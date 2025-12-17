@@ -23,15 +23,18 @@ def list_hikes():
         return
     print("\nCurrent hikes:")
     for i, hike in enumerate(hikes, 1):
-        name_en = hike.get("name", "")
-        name_ja = hike.get("name_ja", "")
-        prefecture = hike.get("prefecture", "")
-        print(f"{i}. {name_en} / {name_ja} [{prefecture}] - {hike['coords']}")
+        print(
+            f"{i}. {hike.get('name','')} / {hike.get('name_ja','')} "
+            f"[{hike.get('prefecture','')}] "
+            f"- {hike['coords']} "
+            f"{'(IG)' if hike.get('instagram') else ''}"
+        )
 
 def add_hike():
     name = input("Enter hike name (English): ").strip()
     name_ja = input("Enter hike name (Japanese, optional): ").strip()
     prefecture = input("Enter prefecture (optional): ").strip()
+    instagram = input("Enter Instagram post URL (optional): ").strip()
 
     try:
         lat = float(input("Enter latitude: ").strip())
@@ -44,7 +47,8 @@ def add_hike():
         "name": name,
         "name_ja": name_ja,
         "prefecture": prefecture,
-        "coords": [lat, lon]
+        "coords": [lat, lon],
+        "instagram": instagram
     }
 
     hikes.append(hike)
@@ -72,11 +76,11 @@ def modify_hike():
 
     hike = hikes[idx]
 
-    print(f"\nModifying '{hike.get('name', '')}'")
+    print(f"\nModifying '{hike.get('name','')}'")
 
-    # ---- Names ----
+    # ---- English name ----
     new_name = input(
-        f"New English name (Enter to keep '{hike.get('name', '')}'): "
+        f"New English name (Enter to keep '{hike.get('name','')}'): "
     ).strip()
 
     if new_name:
@@ -87,13 +91,20 @@ def modify_hike():
             print(f"📂 Folder renamed to {new_folder}")
         hike["name"] = new_name
 
+    # ---- Japanese name ----
     hike["name_ja"] = input(
-        f"New Japanese name (Enter to keep '{hike.get('name_ja', '')}'): "
-    ).strip() or hike.get("name_ja", "")
+        f"New Japanese name (Enter to keep '{hike.get('name_ja','')}'): "
+    ).strip() or hike.get("name_ja","")
 
+    # ---- Prefecture ----
     hike["prefecture"] = input(
-        f"New prefecture (Enter to keep '{hike.get('prefecture', '')}'): "
-    ).strip() or hike.get("prefecture", "")
+        f"New prefecture (Enter to keep '{hike.get('prefecture','')}'): "
+    ).strip() or hike.get("prefecture","")
+
+    # ---- Instagram ----
+    hike["instagram"] = input(
+        f"New Instagram URL (Enter to keep current): "
+    ).strip() or hike.get("instagram","")
 
     # ---- Coordinates ----
     try:
