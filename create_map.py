@@ -18,6 +18,15 @@ folium.TileLayer(
 ).add_to(m)
 
 # -----------------------------
+# 1.0 Font Awesome (Instagram icon)
+# -----------------------------
+fontawesome = """
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+"""
+m.get_root().html.add_child(Element(fontawesome))
+
+# -----------------------------
 # 1.1 Instruction banner
 # -----------------------------
 instruction_html = """
@@ -39,24 +48,27 @@ instruction_html = """
 m.get_root().html.add_child(Element(instruction_html))
 
 # -----------------------------
-# 1.2 Instagram profile link
+# 1.2 Instagram profile link (top-right)
 # -----------------------------
 instagram_profile_html = """
 <a href="https://www.instagram.com/achikochiinjp/"
    target="_blank"
+   rel="noopener noreferrer"
    style="
      position: fixed;
      top: 12px;
      right: 12px;
      background: white;
-     padding: 6px 12px;
+     padding: 6px 14px;
      border-radius: 20px;
      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
      text-decoration: none;
      font-size: 14px;
+     color: #E4405F;
      z-index: 9999;
+     font-weight: 500;
    ">
-  📷 Hiking Instagram
+  <i class="fab fa-instagram"></i> Hiking Instagram
 </a>
 """
 m.get_root().html.add_child(Element(instagram_profile_html))
@@ -82,13 +94,12 @@ with open(data_file, "r", encoding="utf-8") as f:
 # 4. Add markers
 # -----------------------------
 for hike in hikes:
-    # ---- Fields (safe defaults) ----
     name_en = hike.get("name", "Unknown Hike")
     name_ja = hike.get("name_ja", "")
     prefecture = hike.get("prefecture", "")
-    instagram = hike.get("instagram", "")
+    instagram = hike.get("instagram", "").strip()
 
-    # ---- Folder name ----
+    # ---- Folder name (English only) ----
     folder_name = name_en.replace(" ", "_")
     folder_path = os.path.join(images_root, folder_name)
     os.makedirs(folder_path, exist_ok=True)
@@ -106,11 +117,14 @@ for hike in hikes:
 
     # ---- Instagram link (per hike) ----
     instagram_html = ""
-    if instagram:
+    if instagram.startswith("http"):
         instagram_html = f"""
         <br>
-        <a href="{instagram}" target="_blank" style="text-decoration:none;">
-        📷 View this hike on Instagram
+        <a href="{instagram}"
+           target="_blank"
+           rel="noopener noreferrer"
+           style="text-decoration:none; color:#E4405F; font-weight:500;">
+          <i class="fab fa-instagram"></i> View on Instagram
         </a>
         """
 
