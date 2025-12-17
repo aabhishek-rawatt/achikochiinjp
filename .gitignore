@@ -1,0 +1,11 @@
+# Hide local management scripts
+create_map.py
+manage_hikes.py
+
+# Python junk
+__pycache__/
+*.pyc
+
+# OS junk
+.DS_Store
+Thumbs.db
