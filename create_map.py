@@ -8,7 +8,9 @@ from folium import Element
 # 1. Base map (Carto Voyager)
 # -----------------------------
 map_center = [36.2048, 138.2529]
-m = folium.Map(location=map_center, zoom_start=6, tiles=None)
+
+# Fallback zoom (real zoom will be auto-fitted)
+m = folium.Map(location=map_center, zoom_start=7, tiles=None)
 
 folium.TileLayer(
     tiles='https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
@@ -32,12 +34,12 @@ m.get_root().html.add_child(Element(fontawesome))
 instruction_html = """
 <div style="
   position: fixed;
-  top: 10px;
+  top: 12px;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(255,255,255,0.95);
-  padding: 8px 14px;
-  border-radius: 6px;
+  padding: 10px 16px;
+  border-radius: 8px;
   font-size: 14px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.25);
   z-index: 9999;
@@ -48,7 +50,7 @@ instruction_html = """
 m.get_root().html.add_child(Element(instruction_html))
 
 # -----------------------------
-# 1.2 Instagram profile link (top-right)
+# 1.2 Instagram profile link (bigger & clearer)
 # -----------------------------
 instagram_profile_html = """
 <a href="https://www.instagram.com/achikochiinjp/"
@@ -56,19 +58,23 @@ instagram_profile_html = """
    rel="noopener noreferrer"
    style="
      position: fixed;
-     top: 12px;
-     right: 12px;
+     top: 14px;
+     right: 14px;
      background: white;
-     padding: 6px 14px;
-     border-radius: 20px;
-     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+     padding: 10px 18px;
+     border-radius: 24px;
+     box-shadow: 0 3px 8px rgba(0,0,0,0.3);
      text-decoration: none;
-     font-size: 14px;
+     font-size: 16px;
      color: #E4405F;
      z-index: 9999;
-     font-weight: 500;
+     font-weight: 600;
+     display: flex;
+     align-items: center;
+     gap: 8px;
    ">
-  <i class="fab fa-instagram"></i> Hiking Instagram
+  <i class="fab fa-instagram" style="font-size:20px;"></i>
+  Hiking Instagram
 </a>
 """
 m.get_root().html.add_child(Element(instagram_profile_html))
@@ -89,6 +95,13 @@ if not os.path.exists(data_file):
 
 with open(data_file, "r", encoding="utf-8") as f:
     hikes = json.load(f)
+
+# -----------------------------
+# 3.1 Auto-fit map to hikes (IMPORTANT)
+# -----------------------------
+if hikes:
+    bounds = [hike["coords"] for hike in hikes]
+    m.fit_bounds(bounds, padding=(40, 40))
 
 # -----------------------------
 # 4. Add markers
