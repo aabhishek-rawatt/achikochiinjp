@@ -1,7 +1,6 @@
 # Hide local management scripts
 create_map.py
 manage_hikes.py
-favicon.png
 
 # Python junk
 __pycache__/
