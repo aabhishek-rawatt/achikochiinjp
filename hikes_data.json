@@ -1,194 +1,122 @@
 [
     {
         "name": "Mount Rokko",
-        "coords": [
-            34.77778,
-            135.26389
-        ],
-        "images": []
+        "name_ja": "六甲山",
+        "coords": [34.77778, 135.26389]
     },
     {
         "name": "Uma Nose",
-        "coords": [
-            34.66572,
-            135.11178
-        ],
-        "images": []
+        "name_ja": "馬の背",
+        "coords": [34.66572, 135.11178]
     },
     {
         "name": "Fukuchiyama",
-        "coords": [
-            34.79977,
-            135.36007
-        ],
-        "images": []
+        "name_ja": "福知山",
+        "coords": [34.79977, 135.36007]
     },
     {
         "name": "Mount Kongou",
-        "coords": [
-            34.41944,
-            135.67306
-        ],
-        "images": []
+        "name_ja": "金剛山",
+        "coords": [34.41944, 135.67306]
     },
     {
         "name": "Takatori",
-        "coords": [
-            34.79977,
-            135.36007
-        ],
-        "images": []
+        "name_ja": "高取山",
+        "coords": [34.79977, 135.36007]
     },
     {
         "name": "Koya-Kumini",
-        "coords": [
-            34.78333,
-            135.68333
-        ],
-        "images": []
+        "name_ja": "高野・九度山",
+        "coords": [34.78333, 135.68333]
     },
     {
         "name": "Mount Maya",
-        "coords": [
-            34.73292,
-            135.20444
-        ],
-        "images": []
+        "name_ja": "摩耶山",
+        "coords": [34.73292, 135.20444]
     },
     {
         "name": "Mount Iwawaki",
-        "coords": [
-            34.37387,
-            135.5511
-        ],
-        "images": []
+        "name_ja": "岩湧山",
+        "coords": [34.37387, 135.5511]
     },
     {
         "name": "Mount Hiei",
-        "coords": [
-            35.03139,
-            135.86139
-        ],
-        "images": []
+        "name_ja": "比叡山",
+        "coords": [35.03139, 135.86139]
     },
     {
         "name": "Nakayama dera (Hyogo)",
-        "coords": [
-            34.78583,
-            135.29222
-        ],
-        "images": []
+        "name_ja": "中山寺",
+        "coords": [34.78583, 135.29222]
     },
     {
         "name": "Suma Rikyu Park",
-        "coords": [
-            34.69,
-            135.19556
-        ],
-        "images": []
+        "name_ja": "須磨離宮公園",
+        "coords": [34.69, 135.19556]
     },
     {
         "name": "Awaji Island",
-        "coords": [
-            34.38333,
-            134.88333
-        ],
-        "images": []
+        "name_ja": "淡路島",
+        "coords": [34.38333, 134.88333]
     },
     {
         "name": "Mount Shigi",
-        "coords": [
-            34.61245,
-            135.66771
-        ],
-        "images": []
+        "name_ja": "信貴山",
+        "coords": [34.61245, 135.66771]
     },
     {
         "name": "Himeji - Acko",
-        "coords": [
-            34.81667,
-            134.68333
-        ],
-        "images": []
+        "name_ja": "姫路〜安志",
+        "coords": [34.81667, 134.68333]
     },
     {
         "name": "Nunobiki Falls",
-        "coords": [
-            34.72222,
-            135.19583
-        ],
-        "images": []
+        "name_ja": "布引の滝",
+        "coords": [34.72222, 135.19583]
     },
     {
         "name": "Yoshinoyama Nara",
-        "coords": [
-            34.36667,
-            135.76722
-        ],
-        "images": []
+        "name_ja": "吉野山",
+        "coords": [34.36667, 135.76722]
     },
     {
         "name": "Katarai",
-        "coords": [
-            34.465488,
-            135.861846
-        ],
-        "images": []
+        "name_ja": "語らい",
+        "coords": [34.465488, 135.861846]
     },
     {
-        "name": "\u83ca\u6c34\u5c71\u30fcKikusuiyama",
-        "coords": [
-            34.708654,
-            135.15294
-        ],
-        "images": []
+        "name": "Kikusuiyama",
+        "name_ja": "菊水山",
+        "coords": [34.708654, 135.15294]
     },
     {
-        "name": "\u934b\u84cb\u5c71\u30fcNabebutayama",
-        "coords": [
-            34.7157,
-            135.166696
-        ],
-        "images": []
+        "name": "Nabebutayama",
+        "name_ja": "鍋蓋山",
+        "coords": [34.7157, 135.166696]
     },
     {
-        "name": "\u518d\u3073\u5c71\u30fcFutatabi",
-        "coords": [
-            34.718383,
-            135.177735
-        ],
-        "images": []
+        "name": "Futatabiyama",
+        "name_ja": "再度山",
+        "coords": [34.718383, 135.177735]
     },
     {
-        "name": "\u30dd\u30f3\u30dd\u30f3\u30fcPonpon",
-        "coords": [
-            34.935151,
-            135.623831
-        ],
-        "images": []
+        "name": "Ponpon",
+        "name_ja": "ポンポン山",
+        "coords": [34.935151, 135.623831]
     },
     {
-        "name": "\u98ef\u76db\u5c71\u30fcIimori",
-        "coords": [
-            34.726455,
-            135.653526
-        ],
-        "images": []
+        "name": "Iimoriyama",
+        "name_ja": "飯盛山",
+        "coords": [34.726455, 135.653526]
     },
     {
-        "name": "\u5927\u962a\u57ce\u30fc\u5915\u65b9\u6563\u6b69(Osaka Castle Evening Walk)",
-        "coords": [
-            34.687159,
-            135.526106
-        ],
-        "images": []
+        "name": "Osaka Castle Evening Walk",
+        "name_ja": "大阪城 夕方散歩",
+        "coords": [34.687159, 135.526106]
     },
     {
-        "name": "\u3084\u3051\u304a\u3084\u307e\u30fc(\u96ea\u4e0a\u30cf\u30a4\u30ad\u30f3\u30b0)-Yakeoyama (Snow Hike)",
-        "coords": [
-            35.260368,
-            135.937386
-        ],
-        "images": []
+        "name": "Yakeoyama (Snow Hike)",
+        "name_ja": "焼尾山（雪上ハイキング）",
+        "coords": [35.260368, 135.937386]
     }
 ]
